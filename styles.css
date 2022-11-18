@@ -1,0 +1,135 @@
+
+
+#fullDiv{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom right ,rgba(202, 69, 91, 0.8) , rgb(185, 63, 84)    );
+    padding: 0;
+    margin: -10px -10px;
+    animation-name: changeBackgroundAnimation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    
+    
+
+}
+
+
+@keyframes changeBackgroundAnimation {
+
+ 
+    10%{        
+         background: linear-gradient(to bottom right, rgb(128, 236, 242, 0.2)  ,rgb(66, 225, 234, 0.4), seashell );    
+    }
+
+    20%
+    {
+         background: linear-gradient(to bottom right, rgb(128, 236, 242, 0.4)  ,rgb(66, 225, 234, 0.6) , seashell);    
+    }
+
+    30%{
+        background: linear-gradient(to bottom right, rgb(128, 236, 242, 0.6)  ,rgb(66, 225, 234, 0.8) ); 
+    }
+
+    40%{
+        background: linear-gradient(to bottom right, rgb(128, 236, 242, 0.8)  ,rgb(66, 225, 234, 1) );
+    }
+
+    50%{
+        background: linear-gradient(to bottom right, rgba(102, 225, 232, 0.8)  rgb(22, 213, 223)), seashell ;
+    }
+
+    60%{
+        background: linear-gradient(to top left, rgba(232, 92, 116, 0.2) , rgba(167, 58, 76, 0.4)  ); 
+    }
+
+    70%{
+        background: linear-gradient(to top left, rgba(232, 92, 116, 0.4) , rgba(167, 58, 76, 0.6)  );  
+    }
+
+    80%{
+        background: linear-gradient(to top left, rgba(232, 92, 116, 0.6) , rgba(167, 58, 76, 0.8)  );  
+    }
+
+    90%{
+        background: linear-gradient(to top left, rgba(232, 92, 116, 0.8) , rgba(167, 58, 76, 0.9)  ); 
+    }
+
+    100%{
+        background: linear-gradient(to top left, rgba(232, 92, 116, 1) , rgba(167, 58, 76, 1)  ); 
+    }
+
+ 
+
+
+     /* from{
+        background: linear-gradient(to bottom right, rgb(128, 236, 242, 0.1)  ,rgb(66, 225, 234, 1) );
+        
+     }
+
+     to{
+        background: linear-gradient(to top left,rgba(202, 69, 91, 0.8) , rgb(185, 63, 84)   );
+        
+     }
+
+      */
+}
+
+
+
+#heading{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    top: 40vh;
+    transition: transform 3s ;
+    transition-timing-function: ease-in-out;
+    animation-name:headingMove ;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-timing-function: infinite;
+    
+}
+
+#heading:hover{
+    text-decoration: underline;
+    transform: scaleX(1.6)
+    
+    
+}
+
+@keyframes headingMove {
+    from{
+        transform: translateY(10px);
+    }
+    to{
+        transform: translateY(20px);
+    }
+    
+}
+
+@media screen and (min-width:340px) and (max-width:780px){
+    
+#heading{    
+    transition: transform 2s ;
+    transition-timing-function: ease-in-out;
+    
+    
+}
+#heading:hover{
+    text-decoration: underline;
+    transform: scale(0.34, 0.5)
+    
+    
+}
+
+
+
+}
+
+
+
+
+
